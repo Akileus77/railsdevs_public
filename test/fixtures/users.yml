@@ -7,9 +7,13 @@
 #  confirmation_sent_at   :datetime
 #  confirmation_token     :string
 #  confirmed_at           :datetime
+<<<<<<< HEAD
 #  developer              :boolean          default(FALSE)
 #  email                  :string           default(""), not null
 #  employer               :boolean          default(FALSE)
+=======
+#  email                  :string           default(""), not null
+>>>>>>> 07131c53cdaf8bb897e8dc70331bc50045732fff
 #  encrypted_password     :string           default(""), not null
 #  first_name             :string
 #  last_name              :string

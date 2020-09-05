@@ -7,9 +7,13 @@
 #  confirmation_sent_at   :datetime
 #  confirmation_token     :string
 #  confirmed_at           :datetime
+<<<<<<< HEAD
 #  developer              :boolean          default(FALSE)
 #  email                  :string           default(""), not null
 #  employer               :boolean          default(FALSE)
+=======
+#  email                  :string           default(""), not null
+>>>>>>> 07131c53cdaf8bb897e8dc70331bc50045732fff
 #  encrypted_password     :string           default(""), not null
 #  first_name             :string
 #  last_name              :string
@@ -29,15 +33,23 @@
 #
 class User < ApplicationRecord
   include SimpleDiscussion::ForumUser
+<<<<<<< HEAD
 
   has_person_name
   has_many :jobs, dependent: :destroy
+=======
+  has_person_name
+>>>>>>> 07131c53cdaf8bb897e8dc70331bc50045732fff
 
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable, :confirmable
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 07131c53cdaf8bb897e8dc70331bc50045732fff
   def name
     "#{first_name} #{last_name}"
   end
